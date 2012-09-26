@@ -87,4 +87,22 @@ end if
 end
 
 
+undef("easyfonts")
+procedure easyfonts(res:logical, stdfont:numeric)
+begin
+
+res@tiMainFontHeightF    = stdfont*0.8
+
+res@tiXAxisFontHeightF   = stdfont*0.5
+res@tiYAxisFontHeightF   = stdfont*0.5
+
+res@tmXBLabelFontHeightF = stdfont*0.5
+res@tmXTLabelFontHeightF = stdfont*0.5
+res@tmYLLabelFontHeightF = stdfont*0.5
+res@tmYRLabelFontHeightF = stdfont*0.5
+
+;res@lbTitleFontHeightF   = stdfont*0.5
+
+end
+
 
