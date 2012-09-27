@@ -10,3 +10,5 @@ function smoothavg(input:numeric, start:numeric, finish:numeric, length:numeric)
 procedure setviewratio(res:logical, ratio:numeric, ifmap:logical)
 
 procedure easyunits(x:numeric)
+
+procedure easyfont(res:numeric, stdfont:numeric)
