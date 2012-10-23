@@ -83,6 +83,11 @@ if (x@units .eq. "m/s") then
   x = (/x*86400000/)
   x@units = "mm/day"
 end if
+if (x@units .eq. "kg/kg/s") then
+  x = (/x*1000/)
+  x@units = "g/kg/s"
+end if
+
 
 end
 
@@ -91,10 +96,15 @@ undef("easyfonts")
 procedure easyfonts(res:logical, stdfont:numeric)
 begin
 
-res@tiMainFontHeightF    = stdfont*0.8
+res@tiMainFontHeightF    = stdfont
 
-res@tiXAxisFontHeightF   = stdfont*0.5
-res@tiYAxisFontHeightF   = stdfont*0.5
+res@tiXAxisFontHeightF   = stdfont*0.7
+res@tiYAxisFontHeightF   = stdfont*0.7
+
+res@gsnStringFontHeightF = stdfont*0.5
+;res@gsnLeftStringFontHeightF  = stdfont*0.6
+;res@gsnRightStringFontHeightF = stdfont*0.6
+;res@gsnCenterStringFontHeightF = stdfont*0.6
 
 res@tmXBLabelFontHeightF = stdfont*0.5
 res@tmXTLabelFontHeightF = stdfont*0.5
