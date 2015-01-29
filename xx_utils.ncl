@@ -460,7 +460,7 @@ begin
            "PCTMODIS", \
            "CLDTOT_CAL","CLDLOW_CAL","CLDMED_CAL","CLDHGH_CAL", \
            "CLDTOT_CS2", "TGCLDLWP_OCEAN", \
-           "PRECT", "PRECL", "LHFLX"/) 
+           "PRECT", "PRECL", "PRECC", "LHFLX"/) 
 
 ; define contour intervals
   cntrs = (/cntrs_FSNTOA, cntrs_FLUT, cntrs_SHFLX, cntrs_PRECT, cntrs_PSL, cntrs_TS, cntrs_TREFHT, \
@@ -500,7 +500,7 @@ begin
            cntrs_PCTMODIS, \
            cntrs_CLDTOT_COSP, cntrs_CLDLOW_COSP, cntrs_CLDMED_COSP, cntrs_CLDHGH_COSP, \
            cntrs_CLDTOT_COSP, cntrs_TGCLDLWP, \
-           cntrs_PRECT, cntrs_PRECT, cntrs_LHFLX /) 
+           cntrs_PRECT, cntrs_PRECT, cntrs_PRECT,cntrs_LHFLX /) 
 
 
   dcntrs = (/dcntrs_FSNTOA, dcntrs_FLUT, dcntrs_SHFLX, dcntrs_PRECT, dcntrs_PSL, dcntrs_TS, dcntrs_TREFHT, \
@@ -540,7 +540,7 @@ begin
            dcntrs_PCTMODIS, \
            dcntrs_CLDTOT_COSP, dcntrs_CLDLOW_COSP, dcntrs_CLDMED_COSP, dcntrs_CLDHGH_COSP, \
            dcntrs_CLDTOT_COSP, dcntrs_TGCLDLWP, \
-           dcntrs_PRECT, dcntrs_PRECT, dcntrs_LHFLX/) 
+           dcntrs_PRECT, dcntrs_PRECT, dcntrs_PRECT, dcntrs_LHFLX/) 
 
 
   nvars = dimsizes(vars)
